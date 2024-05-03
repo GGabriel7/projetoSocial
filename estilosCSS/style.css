@@ -13,7 +13,6 @@ html, body {
 }
 
 body {
-    
     background-image: url(../imagens/fundo-madeira.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,24 +38,27 @@ body {
     left: 50%;
     top: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -49.4%);
 }
 
 nav > ul {
-    width: 65px;
-    text-align: center;
     position: absolute;
     list-style: none;
-    right: 0;
-    background-image: linear-gradient(180deg, purple, black);
-    height: 100vh;
+    right: 10px;
 }
 
-nav > ul > li {
-    padding: 35% 0 35% 0;
+nav img {
+    width: 60px;
+    margin-top: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+    box-sizing: border-box;
 }
 
+nav img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 2px black;
 
-nav ul img {
-    width: 50px;
+    transition: transform .3s, border .1s, box-shadow .3s;
 }
